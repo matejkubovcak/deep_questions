@@ -2,8 +2,8 @@
   <div id="app" class="app">
     <header class="app-header">
       <div class="header-content">
-        <h1 class="app-title">Deep Questions</h1>
-        <p class="app-subtitle">Mindful introspection through thoughtful inquiry</p>
+        <h1 class="app-title">deep_questions.</h1>
+        <p class="app-subtitle">deepen connections through introspection.</p>
       </div>
     </header>
     
@@ -37,7 +37,7 @@ onMounted(() => {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  background: linear-gradient(135deg, #9bacd5 0%, #1e293b 50%, #334155 100%);
 }
 
 .app-header {

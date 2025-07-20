@@ -33,13 +33,13 @@ export default {
         }
       },
       fontFamily: {
-        'sans': ['Inter', 'system-ui', 'sans-serif'],
+        'sans': ['JetBrains Mono', 'Inter', 'system-ui', 'sans-serif'],
         'serif': ['Georgia', 'serif'],
       },
       animation: {
-        'fade-in': 'fadeIn 0.5s ease-in-out',
-        'fade-out': 'fadeOut 0.5s ease-in-out',
-        'slide-up': 'slideUp 0.3s ease-out',
+        'fade-in': 'fadeIn 0.3s ease-in-out',
+        'fade-out': 'fadeOut 0.1s ease-in-out',
+        'slide-up': 'slideUp 0.1s ease-out',
       },
       keyframes: {
         fadeIn: {
