@@ -4,7 +4,7 @@
  */
 export async function loadQuestions() {
   try {
-    const response = await fetch('/questions.txt')
+    const response = await fetch('/deep_questions/questions.txt')
     const text = await response.text()
     
     return parseQuestions(text)
