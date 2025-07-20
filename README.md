@@ -199,13 +199,3 @@ Questions are loaded from `public/questions.txt`, which contains 73 deep, intros
 3. Commit your changes (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- Questions inspired by deep psychological and philosophical inquiry
-- Built with Vue 3 and modern web technologies
-- Designed for mindful self-reflection and personal growth 
