@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && cp questions.txt dist/questions.txt",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
