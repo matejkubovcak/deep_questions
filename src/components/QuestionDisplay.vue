@@ -20,7 +20,7 @@
     </div>
     
     <div v-else-if="currentQuestion" class="question-container">
-      <Transition name="fade" mode="out-in">
+      <Transition name="fade">
         <div 
           :key="currentQuestion.id" 
           class="question-content"
@@ -201,13 +201,14 @@ const handleTouchEnd = (event) => {
 }
 
 .question-container {
+  position: relative;
   width: 100%;
   max-width: 800px;
 }
 
 .question-content {
   text-align: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.12s ease;
   will-change: transform;
 }
 
@@ -289,10 +290,18 @@ const handleTouchEnd = (event) => {
   color: #94a3b8;
 }
 
-/* Transitions */
+/* Crossfade so the next question appears immediately instead of waiting
+   for a full fade-out (out-in was ~1s: 0.5s leave, then 0.5s enter). */
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.5s ease;
+  transition: opacity 0.12s ease;
+}
+
+.fade-leave-active {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
 .fade-enter-from,
