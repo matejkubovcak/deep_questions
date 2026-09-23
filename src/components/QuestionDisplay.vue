@@ -29,7 +29,7 @@
         >
           <div class="question-header">
             <span class="question-number">
-              Question {{ currentQuestion.id }} of {{ totalQuestions }}
+              {{ activeDeckLabel }} · {{ deckPosition }} of {{ totalQuestions }}
             </span>
             <span class="progress-indicator">
               {{ viewedQuestions.size }} of {{ totalQuestions }} viewed
@@ -74,6 +74,8 @@ const isLoading = computed(() => store.isLoading)
 const error = computed(() => store.error)
 const currentQuestion = computed(() => store.currentQuestion)
 const totalQuestions = computed(() => store.totalQuestions)
+const deckPosition = computed(() => store.deckPosition)
+const activeDeckLabel = computed(() => store.activeDeckLabel)
 const viewedQuestions = computed(() => store.viewedQuestions)
 const progressPercentage = computed(() => store.progressPercentage)
 

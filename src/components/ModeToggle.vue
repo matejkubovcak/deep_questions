@@ -35,10 +35,10 @@
     
     <div class="mode-info">
       <p v-if="navigationMode === 'sequential'" class="info-text">
-        Questions will be shown in order (1, 2, 3...)
+        Questions in this selection are shown in order.
       </p>
       <p v-else class="info-text">
-        Questions will be shown randomly, ensuring no repeats until all viewed
+        Questions in this selection are shown at random, with no repeats until all have been viewed.
       </p>
     </div>
   </div>

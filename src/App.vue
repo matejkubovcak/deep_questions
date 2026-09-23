@@ -5,6 +5,7 @@
         <h1 class="app-title">deep_questions.</h1>
         <p class="app-subtitle">deepen connections through introspection.</p>
       </div>
+      <DeckPicker />
     </header>
     
     <main class="app-main">
@@ -24,6 +25,7 @@ import { useQuestionStore } from './stores/questionStore.js'
 import QuestionDisplay from './components/QuestionDisplay.vue'
 import NavigationControls from './components/NavigationControls.vue'
 import ModeToggle from './components/ModeToggle.vue'
+import DeckPicker from './components/DeckPicker.vue'
 
 const store = useQuestionStore()
 
@@ -41,7 +43,7 @@ onMounted(() => {
 }
 
 .app-header {
-  padding: 2rem;
+  padding: 2rem 1.25rem;
   text-align: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
